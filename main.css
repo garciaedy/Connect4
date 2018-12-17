@@ -1,0 +1,30 @@
+.lil{
+border: solid;    
+}
+
+.big_div{
+    width:100vw;
+    height: 100vh;
+    grid-template-columns: .5fr .5fr 1fr .5fr .5fr;
+    grid-template-rows: repeat(4,1fr);
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas: "header header header header"
+                         "side grid grid grid aside"
+                        "side grid grid grid aside "
+                        "footer footer footer footer"
+    
+}
+
+.header{
+
+}
+.side{
+
+}
+.grid{
+
+}
+.aside{
+
+}
