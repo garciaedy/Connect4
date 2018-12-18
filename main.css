@@ -53,6 +53,10 @@
 .skyblue div{
 background-color: skyblue;
 }
+/* second ball */
+.salmon div{
+    background-color: salmon;
+}
  .aside3{
      grid-area: aside3;
      background: url("images/ta.gif")no-repeat;
