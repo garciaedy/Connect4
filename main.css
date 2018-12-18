@@ -61,6 +61,15 @@ background-color: skyblue;
 .salmon div{
     background-color: salmon;
 }
+#winner{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url(images/ta.gif);
+    font-size: 80px;
+    text-align: center;
+}
+
  .aside3{
      grid-area: aside3;
      background: url("images/ta.gif")no-repeat;
