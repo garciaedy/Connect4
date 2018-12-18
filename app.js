@@ -17,3 +17,22 @@ $(document).on("mouseover", function (){
 dots.css({ display: "block", "background-color": curPlayer});
 })
 
+// state a function in which we'll check fo the winner
+function hasCurPlayerWon(element){
+    var counter=0;
+    // create a loop in which checks if player has match the dots
+    for(var i = 0; 1 < element.length; i++){
+        counter++;
+        if(counter >= 4){
+            return true;
+        }else{
+            counter = 0;
+        }
+    }return false;
+
+}
+
+// created a function in which will change players turns
+function switchPlayer(){
+    
+}
