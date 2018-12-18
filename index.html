@@ -1,116 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <!-- <div class="bigDiv"> -->
-        <!-- <div class="lilDiv header3"> -->
-            <h1 id="conFour">Connect Four</h1>
-        <!-- </div>
-        <div class="lilDiv side3"> -->
-                <!-- <div id="dot"></div>
-                <div id="winner"></div> -->
-        <!-- </div> -->
-  
-        <!-- <div class="lilDiv grid3"> -->
-                <div id="dot"></div>
-                <div id="winner"></div>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Connect Four</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Connect Four</h1>
 
-            <!-- created big  div for to contain the grid -->
+        <div id="dot"></div>
+        <div id="winner"></div>
+     
 <div class="container">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
+    <!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
     this is how the JS will read the divs and pass data through -->
-  <div class="col"> <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the second row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the third row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the fourth row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the fifth row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the sixth row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
-</div>
-<!-- copy paste for the seven row and columns -->
-<div class="col">
-<!-- created grid to start the columns and rows 0-5 will help identify wher the dot is being place 
-    this is how the JS will read the divs and pass data through -->
-    <!-- copy and paste 7 times -->
-<div class="grid row0"></div><div></div>
-<div class="grid row1 "></div><div></div>
-<div class="grid row2"></div><div></div>
-<div class="grid row3 "></div><div></div>
-<div class="grid row4"></div><div></div>
-<div class="grid row5 "></div><div></div>
+  <!-- copy and paste 7 times -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+ </div>
+     <!-- created big  div for to contain the grid -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+    </div>
+        <!-- created big  div for to contain the grid -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+    </div>
+        <!-- created big  div for to contain the grid -->
+    <div class="col">
+     <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+    </div>
+        <!-- created big  div for to contain the grid -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+    </div>
+        <!-- created big  div for to contain the grid -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
+    </div>
+        <!-- created big  div for to contain the grid -->
+    <div class="col">
+        <div class="grid row0"> <div></div></div>
+        <div class="grid row1"><div></div></div>
+        <div class="grid row2"> <div></div> </div>
+        <div class="grid row3"><div></div> </div>
+        <div class="grid row4"> <div></div> </div>
+        <div class="grid row5"><div></div> </div>
 </div>
 
+</div>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="app.js"></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
 </html>
