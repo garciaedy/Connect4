@@ -1,9 +1,9 @@
 
-.child3{
+.lilDiv{
     border:solid; 
    
  }
- .containers3{
+ .bigDiv{
      width: 100vw;
      height: 100vh;
  
@@ -12,21 +12,39 @@
   display: grid;
   grid-gap: 1px;
      grid-template-areas: "header3 header3  header3 header3 header3 "
-                         "side3 blog3 blog3 blog3  aside3"
-                         "side3 blog3 blog3 blog3 aside3"
+                         "side3 grid3 grid3 grid3  aside3"
+                         "side3 grid3 grid3 grid3 aside3"
                          "footer3 footer3 footer3 footer3 footer3"
  }
  .header3{
      grid-area: header3;
+ }
+ #conFour{
+     font-size: 50px;
+     font-family: 'Monoton', cursive;;
+     text-align: center;
+     color: cadetblue;
+
  }
  .side3{
      grid-area: side3;
      background: url("images/tate.gif")no-repeat;
  
  }
- .blog3{
-     grid-area: blog3;
+ .grid3{
+     grid-area: grid3;
  }
+ /* grid set up  */
+ .grid{
+     width: 70px;
+     height: 70px;
+     background-color: turquoise;
+     border: 4px dotted silver;
+ }
+.grid div{
+   width: 50px;
+}
+
  .aside3{
      grid-area: aside3;
      background: url("images/ta.gif")no-repeat;
