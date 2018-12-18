@@ -1,4 +1,4 @@
-
+/* 
 .lilDiv{
     border:solid; 
    
@@ -18,63 +18,136 @@
  }
  .header3{
      grid-area: header3;
- }
- #conFour{
-     font-size: 50px;
-     font-family: 'Monoton', cursive;;
-     text-align: center;
-     color: cadetblue;
+ } */
 
- }
- .side3{
+ /* .side3{
      grid-area: side3;
-     background: url("images/tate.gif")no-repeat;
- 
+      background: url("images/tate.gif")no-repeat;
+  
  }
  .grid3{
      grid-area: grid3;
+ } */
+
+ /* .container{
+     text-align: center;
+     margin-top: 110px;
  }
+ #conFour{
+    font-size: 50px;
+    font-family: 'Monoton', cursive;;
+    text-align: center;
+    color: cadetblue;
+
+}
  .col{
      display: inline-block;
+     margin-right: -6px;
      
- }
+ } */
  /* grid set up  */
- .grid{
+ /* .grid{
      width: 70px;
      height: 70px;
      background-color: turquoise;
-     border: 4px dotted silver;
- }
+     border: 3px solid silver;
+ } */
  /* style where the dots will go */
-.grid div{
+/* .grid div{
    width: 50px;
    height: 50px;
    background-color: honeydew;
    padding: 4px;
    margin: 4px auto;
-}
+} */
 /* setting up first ball */
-.skyblue div{
+/* .skyblue div{
 background-color: skyblue;
-}
+} */
 /* second ball */
-.salmon div{
+/* .salmon div{
     background-color: salmon;
 }
 #winner{
     height: 100%;
     width: 100%;
-    position: fixed;
-    background: url(images/ta.gif);
+    position: fixed; */
+    /* background: url(images/ta.gif); */
+    /* top: 60%;
+    left: 30%; 
     font-size: 80px;
     text-align: center;
-}
+} */
 
- .aside3{
+ /* .aside3{
      grid-area: aside3;
      background: url("images/ta.gif")no-repeat;
  
  }
  .footer3{
      grid-area: footer3;
- }
+ } */
+ * {
+    margin: 0;
+}
+
+/* body {
+
+    overflow: auto;
+} */
+h1 {
+    text-align: center;
+    font-size: 90px;
+    color: purple;
+    padding-top: 10px;
+}
+.container {
+    text-align: center;
+    margin-top: 110px;
+}
+.col {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.grid {
+    width: 90px;
+    height: 90px;
+    background-color: turquoise;
+    border: 3px solid silver;
+}
+.grid div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px auto;
+}
+.skyblue div {
+    background-color: skyblue;
+}
+
+.salmon div {
+    background-color: salmon;
+}
+
+/* #checker {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: green;
+    display: none;
+    z-index: 1;
+} */
+#winner {
+    top: 50%;
+    left: 25%;
+    width: 900px;
+    position: fixed;
+    background: url(images/ta.gif)  no-repeat;
+    font-size: 100px;
+    text-align: center;
+    /* display: none; */
+}
