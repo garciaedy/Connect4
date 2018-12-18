@@ -7,25 +7,29 @@
 var column = $(".col");
 // declare player name by color chosen 
 var curPlayer ="skyblue";
-var curPlayer = "salmon";
+// var curPlayer = "salmon";
 // declaring jquery selector for the grid
 var grid = $(".grid");
 var dots = $("#dots");
 var winner = $("#winner");
 
 $(document).on("mouseover", function (){
-dots.css({ display: "block", "background-color": curPlayer});
+dots.css({ display: "block",
+ "background-color": curPlayer
+});
 })
 
 // state a function in which we'll check fo the winner
 function hasCurPlayerWon(element){
-    var counter=0;
+    var counter = 0;
     // create a loop in which checks if player has match the dots
-    for(var i = 0; 1 < element.length; i++){
+    for(var i = 0; i < element.length; i++){
+        if(element.eq(i).hasClass(curPlayer)){
         counter++;
         if(counter >= 4){
             return true;
-        }else{
+        }
+    } else {
             counter = 0;
         }
     }return false;
@@ -74,26 +78,27 @@ function hideBanner(){
 
 column.on("click", function(e){
     var emptygrid;
-    var gridInComlumn = $(e.currenttarger).find(grid);
+    var gridInColumn = $(e.currentTarget).find(grid);
     
-    for (var i =5; i >=0; i++){
+    for (var i =5; i >=0; i--){
         if(
-            !gridInComlumn.eq(i).hasClass("skyblue")&&
-            !gridInComlumn.eq(i).hasClass("salmon")
+            !gridInColumn.eq(i).hasClass("skyblue")&&
+            !gridInColumn.eq(i).hasClass("salmon")
         ){
-            emptygrid = gridInComlumn.eq(i);
+            emptygrid = gridInColumn.eq(i);
             break;
         }
 
         
     }
+
 emptygrid.addClass(curPlayer);
 
-var rowgrid =$(".row"+i);
+var rowgrid =$(".row" + i);
 if(
     // this check is player has won in row column or angle
      hasCurPlayerWon(rowgrid) || 
-     hasCurPlayerWon(gridInComlumn)
+     hasCurPlayerWon(gridInColumn)
     //  need to add function if works on agle
 ){
     setTimeout(function(){
@@ -108,4 +113,4 @@ if(
 }else{
     switchPlayer();
 }
-})
+});
