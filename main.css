@@ -95,12 +95,7 @@ background-color: skyblue;
 
     overflow: auto;
 } */
-h1 {
-    text-align: center;
-    font-size: 90px;
-    color: purple;
-    padding-top: 10px;
-}
+
 .container {
     text-align: center;
     margin-top: 110px;
@@ -132,15 +127,7 @@ h1 {
     background-color: salmon;
 }
 
-/* #checker {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: green;
-    display: none;
-    z-index: 1;
-} */
+
 #winner {
     top: 50%;
     left: 25%;
@@ -150,4 +137,11 @@ h1 {
     font-size: 100px;
     text-align: center;
     /* display: none; */
+}
+#conFour{
+    font-size: 80px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    color: thistle;
+
 }
