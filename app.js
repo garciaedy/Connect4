@@ -79,10 +79,33 @@ column.on("click", function(e){
     for (var i =5; i >=0; i++){
         if(
             !gridInComlumn.eq(i).hasClass("skyblue")&&
-            !gridInComlumn.eq(i).hasClass("salmon")&&
+            !gridInComlumn.eq(i).hasClass("salmon")
         ){
-            
+            emptygrid = gridInComlumn.eq(i);
+            break;
         }
-    }
 
+        
+    }
+emptygrid.addClass(curPlayer);
+
+var rowgrid =$(".row"+i);
+if(
+    // this check is player has won in row column or angle
+     hasCurPlayerWon(rowgrid) || 
+     hasCurPlayerWon(gridInComlumn)
+    //  need to add function if works on agle
+){
+    setTimeout(function(){
+        showBanner();
+    },600);
+    //    ceate a finction in which the board will be cleared to start a new game
+    setTimeout (function(){
+        clearBoard(grid);
+        hideBanner();
+    },3000);
+  
+}else{
+    switchPlayer();
+}
 })
