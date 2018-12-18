@@ -41,10 +41,18 @@
      background-color: turquoise;
      border: 4px dotted silver;
  }
+ /* style where the dots will go */
 .grid div{
    width: 50px;
+   height: 50px;
+   background-color: honeydew;
+   padding: 4px;
+   margin: 4px auto;
 }
-
+/* setting up first ball */
+.skyblue div{
+background-color: skyblue;
+}
  .aside3{
      grid-area: aside3;
      background: url("images/ta.gif")no-repeat;
