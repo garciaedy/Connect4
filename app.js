@@ -41,3 +41,48 @@ function switchPlayer(){
     }
 
 }
+
+// create a function in which will check to see if player
+// has won diagonal 
+// function wonDiagonally (){
+//     var diag = 0;
+//     for (var d = 0;7 < element.length; d++){
+
+//     }
+// }
+
+// create a function in which board will be cleared
+
+function clearBoard(grid){
+    if(grid.hasClass("skyblue") || grid.hasClass("salmon") ){
+        grid.removeClass("skyblue salmon")
+    }
+}
+// https://stackoverflow.com/questions/15924751/check-if-a-element-is-displaynone-or-block-on-click-jquery/15924792
+//  info
+function showBanner(){
+ winner.html(curPlayer + "won!").css({
+     display: "block",
+     color: curPlayer
+    });
+}
+function hideBanner(){
+    winner.css({
+        display: "none"
+    });
+}
+
+column.on("click", function(e){
+    var emptygrid;
+    var gridInComlumn = $(e.currenttarger).find(grid);
+    
+    for (var i =5; i >=0; i++){
+        if(
+            !gridInComlumn.eq(i).hasClass("skyblue")&&
+            !gridInComlumn.eq(i).hasClass("salmon")&&
+        ){
+            
+        }
+    }
+
+})
