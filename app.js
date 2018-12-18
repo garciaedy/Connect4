@@ -34,5 +34,10 @@ function hasCurPlayerWon(element){
 
 // created a function in which will change players turns
 function switchPlayer(){
-    
+    if(curPlayer == "skyblue"){
+        curPlayer ="salmon";
+    }else{
+        curPlayer ="skyblue";
+    }
+
 }
