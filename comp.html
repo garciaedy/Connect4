@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body class="game">
+    <div class="animated bounceInDown" id="header">
+        <h3 class="player1">Player1 <br> <br>
+            <img src="images/red.png" height="150px" width="150px" alt=""></h3>
+
+        <div class="title">
+        <h2 id="title2">Connect <span id="title4">4</span> </h2>
+        <h3 class="animated bounceInDown"><span id="player">Red Bird</span> 's turn!</h3>
+    </div>
+        <h3 class="player2">Computer  
+            <br> <br>
+            <img src="images/comp.png" height="150px" width="150px" alt=""></h3>
+    </div>
+
+
+    <div class="buttonToggle animated bounceInUp">
+            <a href="twoPlayer.html"> <button id="gameToggle">New Game</button> </a>
+        <div class="circleContainer">
+            <div id="gameBoard"></div>
+       
+        </div>
+        <a href="landing.html"><button id="gameToggle">Main Menu</button></a>
+    </div>
+
+        <br><br> <br>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="app2.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>

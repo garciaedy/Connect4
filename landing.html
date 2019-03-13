@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enter Connect 4</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<body class="landing">
+    <div class="landingContainer">
+        <h2 class="home animated bounceInDown">Connect <span>4</span></h2>
+        <div class="animated bounceInUp">
+
+        <br> <br>
+        <a href="twoPlayer.html"><button id="two">Two Players</button></a>
+        <br> <br>
+        
+        <div class="modal">
+            <a href="#openmodal">
+                <button>Instructions</button></a>
+        </div>
+    </div>
+        <!-- ======Modal fun==== -->
+
+
+        <div class="window" id="openmodal">
+            <div>
+                <a href="#close" title="Close" class="close">
+                    Close</a>
+                <span id="moda">Description</span> <br> <br>
+                <div>This game is played on a vertical board wich has seven hollow columns and six rows. Each column
+                    has a hole in the upper part of the board, where pieces are introduced. There is a window for every
+                    square, so that pieces can be seen from both sides.
+                    In short, it´s a vertical board with 42 windows distributed in 6 rows and 7 columns.
+                    Both players have a set of 21 thin pieces (like coins); each of them uses a different colour. The
+                    board is empty at the start of the game. <br> <br>
+                    <span class="mod">Objective</span> <br> <br>
+                    The aim for both players is to make a straight line of four own pieces; the line can be vertical,
+                    horizontal or diagonal.
+                    <br><br>
+                    <span class="mo">How the game goes on</span> <br> <br>
+                    Before starting, players decide randomly which of them will be the beginner; moves are made
+                    alternatively, one by turn.
+                    Moves entails in placing new pieces on the board; pieces slide downwards from upper holes, falling
+                    down to the last row or piling up on the last piece introduced in the same column. So, in every
+                    turn the introduced piece may be placed at most on seven different squares.
+                    The winner is the first player who gets a straight line made with four own pieces and no gaps
+                    between them.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

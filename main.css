@@ -1,147 +1,279 @@
-/* 
-.lilDiv{
-    border:solid; 
-   
- }
- .bigDiv{
-     width: 100vw;
-     height: 100vh;
- 
-     grid-template-columns: .5fr .5fr 1fr .5fr .5fr;
-     grid-template-rows: repeat(4,1fr);
-  display: grid;
-  grid-gap: 1px;
-     grid-template-areas: "header3 header3  header3 header3 header3 "
-                         "side3 grid3 grid3 grid3  aside3"
-                         "side3 grid3 grid3 grid3 aside3"
-                         "footer3 footer3 footer3 footer3 footer3"
- }
- .header3{
-     grid-area: header3;
- } */
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 
- /* .side3{
-     grid-area: side3;
-      background: url("images/tate.gif")no-repeat;
-  
- }
- .grid3{
-     grid-area: grid3;
- } */
-
- /* .container{
-     text-align: center;
-     margin-top: 110px;
- }
- #conFour{
-    font-size: 50px;
-    font-family: 'Monoton', cursive;;
-    text-align: center;
-    color: cadetblue;
-
+/* ============instructions modal====== */
+.window {
+  position: fixed;
+  background-color: rgba(51, 145, 199, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 400ms ease-in; 
 }
- .col{
-     display: inline-block;
-     margin-right: -6px;
-     
- } */
- /* grid set up  */
- /* .grid{
-     width: 70px;
-     height: 70px;
-     background-color: turquoise;
-     border: 3px solid silver;
- } */
- /* style where the dots will go */
-/* .grid div{
-   width: 50px;
-   height: 50px;
-   background-color: honeydew;
-   padding: 4px;
-   margin: 4px auto;
-} */
-/* setting up first ball */
-/* .skyblue div{
-background-color: skyblue;
-} */
-/* second ball */
-/* .salmon div{
-    background-color: salmon;
-}
-#winner{
-    height: 100%;
-    width: 100%;
-    position: fixed; */
-    /* background: url(images/ta.gif); */
-    /* top: 60%;
-    left: 30%; 
-    font-size: 80px;
-    text-align: center;
-} */
-
- /* .aside3{
-     grid-area: aside3;
-     background: url("images/ta.gif")no-repeat;
- 
- }
- .footer3{
-     grid-area: footer3;
- } */
- * {
-    margin: 0;
+.window:target {
+    opacity: 1;
+    pointer-events: auto;
+    border-radius: 100px;
 }
 
-/* body {
+  /* ====makes modal cover whole page */
 
-    overflow: auto;
-} */
-
-.container {
-    text-align: center;
-    margin-top: 110px;
-}
-.col {
-    display: inline-block;
-    margin-right: -4px;
-}
-
-.grid {
-    width: 90px;
-    height: 90px;
-    background-color: turquoise;
-    border: 3px solid silver;
-}
-.grid div {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 5px auto;
-}
-.skyblue div {
-    background-color: skyblue;
-}
-
-.salmon div {
-    background-color: salmon;
-}
-
-
-#winner {
+.window> div {
+    width: 650px;
+    position: relative;
     top: 50%;
-    left: 25%;
-    width: 900px;
-    position: fixed;
-    background: url(images/ta.gif)  no-repeat;
-    font-size: 100px;
-    text-align: center;
-    /* display: none; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 255, 136);
+    text-shadow: rgb(0, 255, 221) 5px 5px 15px;
+    background: -o-linear-gradient(rgb(173, 100, 100),rgb(99, 26, 26));
+    border-radius: 100px;
+    background: rgb(66, 87, 84);
 }
-#conFour{
-    font-size: 80px;
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    color: thistle;
 
+.window header {
+    font-weight: bold;
+  }
+
+ .window h1 {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+
+  .window> div span {
+    color: rgb(69, 22, 155);
+    text-shadow: white 0 0 25px;
+    font-size: 40px;
+  }
+
+.close{
+  color: white;
+  line-height: 50px;
+  font-size: 25px;
+  position: absolute;
+  right: 60px;
+  text-align: left;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.close:hover {
+    color: rgb(9, 255, 0);
+}
+
+.modal {
+  display: grid;
+  align-items: center;
+
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation-duration: 10s;
+}
+span {
+  font-size: 130px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title2{
+  color: rgb(12, 148, 172);
+  font-size: 60px;
+}
+#title4{
+  color: rgb(32, 66, 88);
+  font-size: 100px;
+}
+
+/* ===========landing page========== */
+.home{
+  color: rgb(0, 140, 255);
+  text-shadow: rgb(0, 132, 255) 5px 5px 15px;
+  font-size: 80px;
+}
+
+button{
+  height: 130px;
+  width: 320px;
+  border-radius: 100px;
+  font-size: 25px;
+  background-image:  radial-gradient(rgb(0, 217, 255), rgb(20, 74, 99) 80%);
+  color: white;
+  font-family: cursive;
+  border: solid 6pt;
+}
+
+button:hover{
+  opacity: .8; 
+}
+
+.landing button{
+  border: rgb(0, 255, 115) solid 6pt;
+  
+}
+
+
+.landing {
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingContainer {
+  text-align: center;
+}
+
+.landing span {
+  color: rgb(0, 247, 255);
+  text-shadow: rgb(94, 255, 0) 0 0 20px;
+}
+
+/* ============GAME Time======== */
+
+.game {
+  background-image: url("https://amaabcainternal.blob.core.windows.net/2016/10/Angry-Birds-Entrance-690x394.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: white 2px 2px 2px;
+  padding: 5px 5px;
+}
+
+h3{
+  color: rgb(18, 122, 170);
+  font-size: 30px;
+  font-family: 'Bungee Inline', cursive;
+  margin: 20px;
+  text-shadow: rgb(7, 104, 150) 2px 2px 2px;
+}
+
+#player {
+  color: blue;
+  text-shadow: white 2px 2px 2px;
+  font-size: 60px;
+}
+
+/* .circleContainer {
+  height: 600px;
+  width: 530px;
+  border-radius: 25px;
+  border-right: 55px groove blue;
+  border-left: 55px groove blue;
+
+}  */
+
+#gameBoard {
+  display: inline-block;
+  /* background-color:lightseagreen; */
+  border-radius: 20px;
+  padding: 2px;
+  
+}
+
+.buttonToggle{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#gameToggle {
+  background-image:  radial-gradient(rgba(0, 153, 255, 0.349) 20%, rgb(0, 17, 255) 70%);
+  color: rgb(134, 34, 34);
+}
+
+.previewRow{
+  display: inline-block;
+  margin: 5px;
+  width: 5200px;
+  height: 70px;
+  }
+  
+.preCol {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+  /* background: #E7E5DB; */
+  border-radius: 100px;
+  /* box-shadow: blue 2px 2px 2px 2px; */
+}
+
+.row{
+display: inline-block;
+margin: 5px;
+}
+
+.col {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 7px;
+  background: #E7E5DB;
+  border-radius: 100px;
+  box-shadow: blue 0px 0px 0px 5px;
+}
+
+.swal-modal {
+  background-color: rgb(208, 255, 0);
+  border: 3px solid white;
+  width: 800px
+}
+
+.swal-text {
+  text-align: center;
+  color: rgb(146, 80, 80);
+  text-shadow: rgb(0, 255, 0) 2px 2px 2px;
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row .Player1 {
+  background-image: url("https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/02/30124036/red-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row .Player2 {
+  background-image: url("http://www.cartoonswallpapers.net/wallpapers/angry-birds-blue-bird-cartoon-background-image-pc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row .Computer {
+  background-image: url("images/comp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.next-Player1 {
+  background-image: url("https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/02/30124036/red-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .6;
+}
+
+.next-Player2{
+  background-image: url("http://www.cartoonswallpapers.net/wallpapers/angry-birds-blue-bird-cartoon-background-image-pc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .6;
 }
