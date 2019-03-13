@@ -5,7 +5,7 @@
  Connect Four  is a two-player connection game in which the players  take turns playing  in the 7 X 6 grid.  The objective of the game is to be the first to form a horizontal, vertical, or diagonal. Once the user comes to the site, the users will determine which one goes first. 
  once someone has won the a alert box will pop displaying which player won. The game will reset it self an the game can be played again.
 
-http://amazing-franklin-88973f.netlify.com/
+https://nervous-payne-4086df.netlify.com/
 
 # Wire Frame/ 
 <img src="images/wireframe.JPG" alt="">
